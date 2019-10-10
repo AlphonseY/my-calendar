@@ -1,0 +1,126 @@
+.my-calendar-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  text-align: center;
+  color: #343951;
+  background-color: #f0f0f6;
+  overflow: auto;
+}
+.my-calendar-wrapper .calendar-date-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
+}
+.my-calendar-wrapper .calendar-date {
+  padding-top: 16px;
+  overflow: hidden;
+}
+.my-calendar-wrapper .calendar-date-title {
+  height: 30px;
+  padding: 0 32px;
+  font-size: 14px;
+  line-height: 30px;
+}
+.my-calendar-wrapper .calendar-date-title .title-year {
+  float: left;
+  font-weight: 700;
+  color: #353636;
+}
+.my-calendar-wrapper .calendar-date-title .title-legend {
+  position: relative;
+  float: right;
+  height: 100%;
+  margin-left: 17px;
+  padding-left: 9px;
+  color: #898989;
+}
+.my-calendar-wrapper .title-legend i {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.my-calendar-wrapper .title-legend2 i {
+  background-color: #FF971C;
+  box-shadow: 0 0 6px rgba(255,151,28.6);
+}
+.my-calendar-wrapper .title-legend1 i {
+  background-color: #52B1F1;
+  box-shadow: 0 0 6px rgba(81,177,241,.6);
+}
+.my-calendar-wrapper .calendar-date-inner {
+  width: 95.1691%;
+  margin: 0 auto;
+  padding: 0 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(37,21,17,.1);
+}
+.my-calendar-wrapper .calendar-date-inner .calendar-week {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 38px;
+  margin: 0 5.9222%;
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 30px;
+  border-bottom: 1px solid #f2f2f2;
+}
+/*.my-calendar-wrapper .calendar-date-inner .calendar-week:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f2f2f2;
+  transform: scaleY(.5);
+  -webkit-transform: scaleY(.5);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}*/
+.my-calendar-wrapper .calendar-date-container:after {
+  content: "";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+.my-calendar-wrapper .calendar-date-item-box {
+  float: left;
+  width: 14.2857%;
+  height: 30px;
+  margin: 1px 0;
+  line-height: 30px;
+}
+.my-calendar-wrapper .calendar-date-item {
+  width: 30px;
+  height: 100%;
+  margin: 0 auto;
+}
+.my-calendar-wrapper .calendar-date-item.prev-month,
+.my-calendar-wrapper .calendar-date-item.next-month {
+  color: #898989;
+}
+.my-calendar-wrapper .calendar-date-item-blue {
+  color: #fff;
+  border-radius: 50%;
+  background-color: #52B1F1;
+  box-shadow: 0 0 6px #52B1F1;
+}
+.my-calendar-wrapper .calendar-date-item-orange {
+  color: #fff;
+  border-radius: 50%;
+  background-color: #FF971C;
+  box-shadow: 0 0 6px #FF971C;
+}
